@@ -15,7 +15,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-black text-white p-4 flex items-center justify-between">
+        <div className="bg-black text-white p-4 flex items-center justify-between relative">
             <div className="flex items-center space-x-4">
                 <Link to="/home">
                     <img
@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className="md:hidden absolute top-16 right-4 bg-black text-white p-4 rounded-md">
+                <div className="md:hidden absolute top-16 right-0 bg-black text-white p-4 rounded-md shadow-lg z-50">
                     <div className="flex flex-col space-y-4">
                         <Link to="/movies/popular" className="hover:text-gray-400" onClick={handleToggle}>Popular</Link>
                         <Link to="/movies/top_rated" className="hover:text-gray-400" onClick={handleToggle}>Top Rated</Link>
