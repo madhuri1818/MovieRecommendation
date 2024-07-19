@@ -42,7 +42,7 @@ const Navbar = () => {
                 
                 <Link
                     to="/profile"
-                    className="hidden md:flex items-center bg-gray-800 rounded-full p-2 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 hover:bg-gray-700"
+                    className="flex items-center bg-gray-800 rounded-full p-2 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 hover:bg-gray-700"
                 >
                     <img
                         className="w-8 h-8 rounded-full"
