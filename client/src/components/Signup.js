@@ -16,10 +16,12 @@ function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(""); // Clear previous errors
+    setError("");
     try {
       console.log("Submitting signup form...");
-      const response = await axios.post("http://localhost:5000/api/auth/signup", {
+      const response = await axios.post(
+        // "http://localhost:5000/api/auth/signup"
+       "https://movierecommendation-5dqg.onrender.com/api/auth/signup", {
         firstName,
         lastName,
         email,
@@ -156,8 +158,6 @@ function Signup() {
         </div>
       </div>
       <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
-      
-      {/* Inline CSS for gradient text */}
       <style>{`
         @keyframes animated-gradient {
           to {
